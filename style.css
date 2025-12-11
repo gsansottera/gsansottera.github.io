@@ -1,0 +1,473 @@
+/* Set the main font for the page title */
+title {
+  font-family: 'Helvetica Neue';
+}
+
+/* General body settings */
+body {
+  margin: 0; /* remove default page margin */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* clean sans-serif font */
+  color: #111; /* dark gray text */
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex; /* place items (logo + links) horizontally */
+  justify-content: space-between; /* space between logo and menu */
+  align-items: center; /* vertically center them */
+  padding: 1rem 5rem 1rem 5rem; /* inner spacing top/right/bottom/left */
+  position: fixed; /* keep navbar visible when scrolling */
+  width: 100%; /* full width */
+  background-color: white; /* white background */
+}
+
+/* Logo and name section inside navbar */
+.brand {
+  display: flex; /* place logo and text side by side */
+  align-items: center; /* vertically centered */
+  gap: 0.6rem; /* small space between logo and text */
+}
+
+/* Logo styling */
+.site-logo {
+  height: 40px; /* logo size */
+  width: auto; /* maintain aspect ratio */
+}
+
+/* Website name text */
+.site-name {
+  font-weight: 700; /* bold */
+  font-size: 1rem; /* moderate text size */
+  letter-spacing: 1px; /* space between letters */
+  color: #111; /* dark text */
+}
+
+/* Navigation links on the right */
+.nav-links {
+  display: flex; /* horizontal layout */
+  align-items: center; /* vertical center */
+  margin-right: 10rem; /* space inside navbar */
+}
+
+/* Style each nav link */
+.nav-links a {
+  text-decoration: none; /* remove underline */
+  color: #111; /* dark text */
+  margin-left: 1.5rem; /* space between links */
+  font-size: 0.9rem; /* smaller font size */
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  height: 100vh; /* full screen height */
+  background: url('images/ogs-baby-turtle.jpg') center/cover no-repeat; /* hero background image */
+  display: flex; /* center text */
+  align-items: center; /* vertical center */
+  justify-content: center; /* horizontal center */
+  text-align: center; /* center align text */
+  padding: 2rem; /* space inside section */
+  color: white; /* white text */
+}
+
+/* Hero text box styling */
+.hero-text {
+  background: rgba(0, 0, 0, 0.4); /* semi-transparent dark overlay behind text */
+  padding: 2rem; /* inner spacing */
+  border-radius: 8px; /* rounded corners */
+}
+
+/*Line between every section*/
+.content-section {
+  border-top: 2px solid #e9dcc3;
+  padding-top: 40px;   /* adds breathing room after the line */
+  margin-top: 40px;    /* space before the line */
+}
+
+
+/* ===== TURTLES SECTION ===== */
+.turtles {
+  background-color: #e9dcc3; /* light beige background */
+  padding: 5rem 2rem; /* section padding */
+  text-align: center; /* center titles and text */
+}
+
+/* Turtle section title */
+.turtles h2 {
+  color: #004d40; /* dark color */
+  margin-bottom: 2rem; /* space below title */
+}
+
+.wwf-badge {
+  display: flex; /* I put logo and text on the same line */
+  align-items: center; /* I align them vertically */
+  gap: 0.5rem; /* space between logo and text */
+}
+
+.wwf-logo {
+  width: 70px; /* small logo */
+  height: auto; /* proportions kept */
+}
+
+
+/* ===== THREATS SECTION ===== */
+.threats {
+  background-color: #e9dcc3; /* same beige background */
+  padding: 5rem 2rem; /* section spacing */
+  text-align: center; /* center content */
+  color: #004d40; /*  text color */
+}
+
+.threats h2 {
+  font-size: 2rem; /* larger heading */
+  margin-bottom: 3rem; /* space below */
+  color: #00332d; /* darker teal for contrast */
+}
+
+/* Grid layout for threat cards */
+.threat-grid {
+  display: grid; /* grid container */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* responsive columns */
+  gap: 2.5rem; /* space between cards */
+  max-width: 1000px; /* limit section width */
+  margin: auto; /* center grid */
+}
+
+/* Each threat card */
+.threat-card {
+  background-color: white; /* white card */
+  border-radius: 16px; /* rounded corners */
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1); /* subtle shadow */
+  padding: 2rem 1rem; /* inner spacing */
+}
+
+/* Card titles */
+.threat-card h3 {
+  margin-top: 1rem; /* space above */
+  margin-bottom: 0.5rem; /* space below */
+  font-size: 1.3rem; /* medium size */
+  color: #00796b; /* teal heading */
+}
+
+/* Card text */
+.threat-card p {
+  color: #333; /* dark gray text */
+  font-size: 0.95rem; /* small readable text */
+  line-height: 1.5; /* line spacing */
+}
+
+/* Icons inside threat cards */
+.threat-icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 1rem; /* center icon */
+  background-size: contain; /* keep proportions */
+  background-position: center;
+}
+
+/* Specific threat images */
+.net { background-image: url('images/net.jpg'); }
+.hooks { background-image: url('images/hooks.jpg'); }
+.plastic { background-image: url('images/plastic.jpg'); }
+
+/* ===== TURTLE GRID SECTION ===== */
+.turtle-grid {
+  display: grid; /* use grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* chatgpt suggested and helped me, it means every columns has to be 250px large, but it can expand until 1fr */
+  gap: 2rem; /* space between cards */
+  max-width: 1000px; /* limit width */
+  margin: auto; /* center grid */
+}
+
+/* Turtle info cards */
+.turtle-card {
+  border-radius: 12px; /* rounded edges */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* soft shadow */
+  padding: 2rem 1rem 1rem 1rem; /* space inside */
+  color: white; /* white text */
+  position: relative; /* for overlay effect */
+  background-size: cover; /* image covers card */
+  background-position: center; /* center image */
+  min-height: 350px; /* ensure tall enough */
+  display: flex; /* for vertical alignment */
+  flex-direction: column; /* stack text */
+  justify-content: flex-end; /* align text at bottom */
+}
+
+/* Dark overlay on each turtle image */
+.turtle-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* dark transparent layer */
+  border-radius: 12px; /* same rounded corners */
+  z-index: 0; /* behind text */
+}
+
+/* Text sits above overlay */
+.turtle-card h3,
+.turtle-card p {
+  position: relative;
+  z-index: 1;
+  margin: 0 1rem;
+}
+
+/* Turtle image backgrounds */
+.olive { background-image: url('images/olive.jpg'); }
+.gina { background-image: url('images/gina.jpg'); }
+.tini { background-image: url('images/tini.jpg'); }
+.turt { background-image: url('images/turt.jpg');}
+.toise { background-image: url('images/toise.jpg');}
+.coral { background-image: url('images/coral.jpg')}
+
+/* TURTLE CAROUSEL*/
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  display: flex;
+  gap: 20px;
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+  font-size: 20px;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* ===== ADOPT NOW SECTION ===== */
+.adopt-now {
+  background: linear-gradient(135deg, #00796b, #004d40); /* teal gradient background */
+  color: white; /* white text */
+  text-align: center; /* center content */
+  padding: 4rem 2rem; /* spacing */
+}
+
+/* Adopt Now title */
+.adopt-now h2 {
+  font-size: 2rem; /* large heading */
+  margin-bottom: 1rem; /* space below */
+}
+
+/* Call-to-action button */
+.adopt-now .btn {
+  background: white; /* white button */
+  color: #00796b; /* teal text */
+  padding: 0.8rem 2rem; /* padding inside */
+  border-radius: 50px; /* pill shape */
+  text-decoration: none; /* remove underline */
+  font-weight: bold; /* bold text */
+}
+
+/* ===== CONTENT SECTION ===== */
+.content-section {
+  padding: 5rem 2rem; /* spacing */
+  max-width: 800px; /* limit width */
+  margin: auto; /* center */
+  line-height: 1.6; /* comfortable reading */
+}
+
+/* ===== ADOPTION FORM ===== */
+#adopt-form {
+  margin-top: 2rem; /* space above form */
+  max-width: 400px; /*  width of the form */
+  margin-left: auto;
+  margin-right: auto; /* center form */
+  background: white; /* white box */
+  color: #004d40; /* teal text */
+  padding: 2rem; /* spacing inside */
+  border-radius: 16px; /* rounded corners */
+  display: flex;
+  flex-direction: column; /* stack items vertically */
+  gap: 1rem; /* space between inputs */
+}
+
+/* Form heading */
+#adopt-form h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Form labels */
+#adopt-form label {
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Input fields */
+#adopt-form input {
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+/* Submit button */
+.submit-btn {
+  background: #00796b; /* background */
+  color: white; /* white text */
+  border: none;
+  padding: 0.8rem;
+  border-radius: 50px; /* rounded button */
+  font-weight: bold;
+  transition: background 0.3s ease; /* smooth hover effect */
+}
+
+/* Hover effect for submit button */
+.submit-btn:hover {
+  background: #004d40; /* darker teal */
+}
+
+
+/* Footer link styling */
+footer a {
+  color: #0077b6; /* blue links */
+  text-decoration: none;
+}
+
+/*MAP*/
+.unimi-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px; /* space between map and text */
+  margin-top: 20px;
+}
+
+.map-container {
+  flex: 1; /* map takes half space */
+  min-width: 300px;
+}
+
+.unimi-text {
+  flex: 1; /* text takes the other half */
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.unimi-text p {
+  margin-bottom: 10px;
+}
+
+/*Footer at the very end*/
+.footer {
+  background-color: #e9dcc3;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 60px;
+}
+
+.footer-logo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+/*COOKIES*/
+#consentBox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999; /* molto alto, sopra le card */
+}
+
+
+#consentBox.hide {
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.cookieBox {
+background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#consentBox.hide {
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.8);
+    transition: all 0.3s ease;
+}
+
+::selection {
+    color: #fff;
+    background: #229a0f;
+}
+
+#consentContent p {
+    color: #858585;
+    margin: 10px 0 20px 0;
+}
+
+
+#consentContent .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.consentButton,
+.rejectButton {
+    padding: 12px 30px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.consentButton {
+    background: #2a910b;
+    margin-right: 10px;
+}
+
+.rejectButton {
+    color: #111211;
+    background: transparent;
+    border: 2px solid #099c2c;
+    text-decoration: none;
+}
+
+#consentBox img {
+    max-width: 90px;
+}
+
+#consentHeader {
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 10px;
+}
