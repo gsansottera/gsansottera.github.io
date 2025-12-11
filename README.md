@@ -1,4 +1,4 @@
-# MYTURTLE – Symbolic Sea Turtle Adoption  
+# MYTURTLE, the symbolic sea turtle adoption  
 ### Project by **Greta Sansottera – 65961A**  
 Università degli Studi di Milano – Web Communication  
 
@@ -15,17 +15,17 @@ The project includes interactive components, informative sections, and a simple 
 ## Website Structure  
 The site is composed of several sections:
 
-- **Hero section** — main mission  
-- **Meet our turtles** — interactive carousel with six turtles  
-- **Why adopt?** — explanation of adoption purpose  
-- **WWF standards** — ethical framing of conservation  
-- **About us** — mission and vision  
-- **How it works** — steps of symbolic adoption  
-- **Threats** — grid of major dangers for turtles  
-- **Participation** — call to action  
-- **Adopt Now** — adoption form  
-- **Contact us** — email  
-- **UniMi support** — map + institutional link  
+- **Hero section**: main mission  
+- **Meet our turtles**: interactive carousel with six turtles  
+- **Why adopt?**: explanation of adoption purpose  
+- **WWF standards**: ethical framing of conservation  
+- **About us**: mission and vision  
+- **How it works**: steps of symbolic adoption  
+- **Threats**: grid of major dangers for turtles  
+- **Participation**: call to action  
+- **Adopt Now**: adoption form  
+- **Contact us**: email  
+- **UniMi support**: map + institutional link  
 - **Footer**
 
 ---
@@ -35,11 +35,11 @@ The site is composed of several sections:
 - Consistent colors inspired by the sea, the turtles and the beaches
 - Grid and flexbox for layout  
 - Cards with images, shadows, rounded corners  
-- Readable typography  
+- Readable typography
 
 ---
 
-## Technologies Used  
+## Technologies used  
 **HTML** – page structure  
 **CSS** – layout, styling, responsiveness  
 **JavaScript** – interactive features:
@@ -73,23 +73,17 @@ The presentation summarises:
 - Conclusions
 
 To view the presentation:  
-1. Open the file `presentation.html` in a browser  
-2. Use **← →** arrows to navigate  
+1. Open the file `presentation.html` in a browser (firefox preferred)
+2. Use arrows to navigate  
 
 ---
 
 ## How to run the project  
 1. Download the project folder  
-2. Open `!DOCTYPE.html` preferably on Firefox 
-3. Everything works locally — no installation required  
+2. Open `index.html` preferably on Firefox   
 
 ---
 
 ## Author  
 **Greta Sansottera – 65961A**  
 Email: greta.sansottera@studenti.unimi.it
-
----
-
-## Project Status  
-Completed for the exam of Web Communication.  
